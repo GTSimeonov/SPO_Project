@@ -1,6 +1,6 @@
 #ifndef GTHREAD_DISPENSER
 #define GTHREAD_DISPENSER GTHREAD_DISPENSER
-#define function_pointer(name) void (*name)()
+
 #include<pthread.h>
 #include<semaphore.h>
 #include<stdlib.h>//malloc et al.
