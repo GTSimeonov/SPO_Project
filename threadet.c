@@ -8,7 +8,7 @@
  */ 
 #include"gmp.h"
 /*
- * posix threads for maximum portability :>
+ * I really should be using <threads.h>
  */
 #include<pthread.h>
 
