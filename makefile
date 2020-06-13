@@ -1,5 +1,5 @@
 install:
-	gcc -pthread main.c -o main.exe -L. -lgmp
+	gcc -pthread main.c -o main.exe -lgmp
 	gcc make_heavy.c -o make_heavy.exe
 
 clear:
