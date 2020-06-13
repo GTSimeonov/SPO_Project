@@ -158,13 +158,14 @@ void calc_row(mpq_t **matrix,size_t size,size_t target,size_t source)
 {
 	mpq_t mod;
 	mpq_t temp1;
-
+	size_t k;
+	
 	mpq_init(mod);
 	mpq_init(temp1);
 	
 
 	mpq_div(mod,matrix[target][source],matrix[source][source]);
-	size_t k;
+
 	for(k=0;k<=size;++k)
 	{
 		mpq_mul(temp1,matrix[source][k],mod);
